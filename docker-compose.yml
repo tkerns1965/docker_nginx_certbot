@@ -13,4 +13,4 @@ services:
 
 volumes:
     letsencrypt:
-        # external: true
+        external: true
