@@ -6,11 +6,11 @@ services:
         image: nginx_certbot
         container_name: nginx_certbot1
         volumes:
-            - vol_letsencrypt:/etc/letsencrypt
+            - letsencrypt:/etc/letsencrypt
         ports:
             - "80:80"
             - "443:443"
 
 volumes:
-    vol_letsencrypt:
-        external: true
+    letsencrypt:
+        # external: true
