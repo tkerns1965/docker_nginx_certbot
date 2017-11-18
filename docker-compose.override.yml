@@ -1,0 +1,6 @@
+version: "3"
+
+environment:
+    - EMAIL=tony.kerns.65@gmail.com
+    - WEBROOT=/usr/share/nginx/html
+    - DOMAIN=tkhome.ignorelist.com,owncloud.tkhome.ignorelist.com

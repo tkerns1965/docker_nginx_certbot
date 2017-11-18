@@ -14,3 +14,8 @@ services:
 volumes:
     letsencrypt:
         external: true
+
+environment:
+    - EMAIL=email@example.com
+    - WEBROOT=/web/root
+    - DOMAIN=example.com,www.example.com
