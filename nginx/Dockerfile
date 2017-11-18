@@ -6,5 +6,5 @@ RUN apk update && \
     # mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.old && \
     # mkdir -p /var/www/html
 
-COPY root/* /root/
+COPY certbot_create.sh /root/
 # COPY nginx.conf /etc/nginx/
