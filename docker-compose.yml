@@ -1,1 +1,16 @@
+version: "3"
 
+services:
+    nginx:
+        build: nginx
+        image: img_certbot1
+        container_name: certbot1
+        volumes:
+            - vol_letsencrypt:/etc/letsencrypt
+        ports:
+            - "80:80"
+            - "443:443"
+
+volumes:
+    vol_letsencrypt:
+        external: true
