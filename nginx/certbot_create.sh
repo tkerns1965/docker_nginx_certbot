@@ -3,8 +3,8 @@
 # certbot certonly --webroot -n --staging --dry-run --agree-tos \
 #     -m tony.kerns.65@gmail.com -w /usr/share/nginx/html -d tkhome.ignorelist.com,owncloud.tkhome.ignorelist.com
 
-certbot certonly --webroot -n --staging --agree-tos \
-    -m tony.kerns.65@gmail.com -w /usr/share/nginx/html -d tkhome.ignorelist.com,owncloud.tkhome.ignorelist.com
-
-# certbot certonly --webroot -n --agree-tos \
+# certbot certonly --webroot -n --staging --agree-tos \
 #     -m tony.kerns.65@gmail.com -w /usr/share/nginx/html -d tkhome.ignorelist.com,owncloud.tkhome.ignorelist.com
+
+certbot certonly --webroot -n --agree-tos \
+    -m tony.kerns.65@gmail.com -w /usr/share/nginx/html -d tkhome.ignorelist.com,owncloud.tkhome.ignorelist.com
