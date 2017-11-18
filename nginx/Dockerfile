@@ -1,7 +1,5 @@
 FROM nginx:1.13.6-alpine
 
-ENV EMAIL email@example.com
-
 RUN apk update && \
     apk add certbot && \
     echo '#!/bin/sh' > /root/certbot_create1.sh && \
