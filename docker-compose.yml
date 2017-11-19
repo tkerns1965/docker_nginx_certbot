@@ -6,7 +6,7 @@ services:
         image: nginx_certbot
         container_name: nginx_certbot1
         volumes:
-            - ../owncloud_volumes/letsencrypt:/etc/letsencrypt
+            - ../docker_volumes/letsencrypt:/etc/letsencrypt
         ports:
             - "80:80"
             - "443:443"
@@ -14,7 +14,3 @@ services:
             - CERTBOT_EMAIL=${CERTBOT_EMAIL}
             - CERTBOT_WEBROOT=${CERTBOT_WEBROOT}
             - CERTBOT_DOMAIN=${CERTBOT_DOMAIN}
-
-# volumes:
-#     letsencrypt:
-#         external: true
