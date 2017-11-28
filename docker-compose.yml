@@ -2,7 +2,10 @@ version: "3"
 
 services:
     nginx:
-        build: nginx
+        build:
+            context: nginx
+            args:
+                - NGINX_VERSION=1.13.7-alpine
         image: nginx_certbot
         container_name: nginx_certbot1
         volumes:
@@ -11,7 +14,6 @@ services:
             - "80:80"
             - "443:443"
         environment:
-            - NGINX_VERSION=1.13.7-alpine
             - CERTBOT_EMAIL=${CERTBOT_EMAIL}
             - CERTBOT_DOMAIN=${CERTBOT_DOMAIN}
             - CERTBOT_WEBROOT=/usr/share/nginx/html
