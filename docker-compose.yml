@@ -12,5 +12,5 @@ services:
             - "443:443"
         environment:
             - CERTBOT_EMAIL=${CERTBOT_EMAIL}
-            - CERTBOT_WEBROOT=${CERTBOT_WEBROOT}
             - CERTBOT_DOMAIN=${CERTBOT_DOMAIN}
+            - CERTBOT_WEBROOT=/usr/share/nginx/html
