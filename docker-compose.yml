@@ -11,7 +11,7 @@ services:
             - "80:80"
             - "443:443"
         environment:
-            - NGINX_VERSION=1.13.6-alpine
+            - NGINX_VERSION=1.13.7-alpine
             - CERTBOT_EMAIL=${CERTBOT_EMAIL}
             - CERTBOT_DOMAIN=${CERTBOT_DOMAIN}
             - CERTBOT_WEBROOT=/usr/share/nginx/html
