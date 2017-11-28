@@ -1,4 +1,5 @@
-FROM nginx:1.13.6-alpine
+ARG NGINX_VERSION
+FROM nginx:${NGINX_VERSION}
 
 RUN apk update && \
     apk add certbot
