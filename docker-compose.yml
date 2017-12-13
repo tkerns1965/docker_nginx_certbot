@@ -9,7 +9,7 @@ services:
         image: nginx_certbot
         container_name: nginx_certbot1
         volumes:
-            - ../docker_volumes/letsencrypt:/etc/letsencrypt
+            - /srv/docker_volumes/letsencrypt:/etc/letsencrypt
         ports:
             - "80:80"
             - "443:443"
